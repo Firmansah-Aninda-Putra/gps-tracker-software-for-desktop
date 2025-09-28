@@ -1,0 +1,43 @@
+name: madiun_siaga_112
+description: Aplikasi tracking ambulan untuk Madiun Siaga 112.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.5
+  flutter_map: ^4.0.0  # OpenStreetMap package
+  latlong2: ^0.8.2    # Untuk koordinat GPS
+  location: ^4.4.0    # Untuk akses lokasi perangkat
+  http: ^0.13.5       # Untuk API requests
+  shared_preferences: ^2.1.0  # Untuk penyimpanan lokal
+  provider: ^6.0.5    # Untuk state management
+  sqflite: ^2.2.8+4   # Untuk database lokal
+  path_provider: ^2.0.15  # Untuk lokasi penyimpanan
+  flutter_config: ^2.0.2  # Untuk env variables
+  permission_handler: ^10.2.0  # Untuk menangani izin
+  connectivity_plus: ^6.1.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.1
+  flutter_launcher_icons: ^0.13.1  # Untuk icon aplikasi
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "images/logo.png"
+  windows:
+    generate: true
+    image_path: "images/logo.png"
+    icon_size: 48
+
+flutter:
+  uses-material-design: true
+  assets:
+    - images/
